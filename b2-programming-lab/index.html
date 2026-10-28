@@ -454,7 +454,7 @@ function setBig(on){
 /* ================= rendering ================= */
 const lessonNo = l => LESSONS.indexOf(l) + 1;
 function sidebar(cur){
-  let h = `<a href="#home" ${!cur?'aria-current="page"':''}><span class="num">START</span>Course map &amp; how to teach</a>`;
+  let h = `<a href="#home" ${!cur?'aria-current="page"':''}><span class="num">START</span>Course map</a>`;
   for (const u in UNITS){
     h += `<h4>${u} · ${UNITS[u]}</h4>`;
     LESSONS.filter(l => l.unit === u).forEach(l => {
